@@ -126,6 +126,7 @@ else {
 }
 */
 
+/*
 // const markMass = 78;
 // const johnMass = 95;
 // const markHeight = 1.69;
@@ -166,3 +167,38 @@ console.log("23" - "10" - 3); // converted to number using -
 console.log("23" / "2");
 console.log("23" > "13");
 console.log("23" < 14);
+*/
+
+//CODING CHALLENGE 3
+
+const dolphinsGame1 = 97;
+const dolphinsGame2 = 112;
+const dolphinsGame3 = 101;
+const koalasGame1 = 109;
+const koalasGame2 = 95;
+const koalasGame3 = 106;
+
+let avgDolphinsScore = (dolphinsGame1 + dolphinsGame2 + dolphinsGame3) / 3;
+let avgKoalasScore = (koalasGame1 + koalasGame2 + koalasGame3) / 3;
+
+// if (avgDolphinsScore > avgKoalasScore) {
+//   console.log(
+//     `Dolphins ${avgDolphinsScore} is higher than Koalas ${avgKoalasScore}`
+//   );
+// } else if (avgDolphinsScore < avgKoalasScore) {
+//   console.log(
+//     `Koalas ${avgKoalasScore} is higher than Dolphins ${avgDolphinsScore} `
+//   );
+// } else console.log(`Dolphins and Koalas have the same avg score. DRAW!`);
+
+if (avgDolphinsScore > avgKoalasScore && avgDolphinsScore > 100) {
+  console.log(
+    `Dolphins ${avgDolphinsScore} is higher than Koalas ${avgKoalasScore}`
+  );
+} else if (avgDolphinsScore < avgKoalasScore && avgKoalasScore > 100) {
+  console.log(
+    `Koalas ${avgKoalasScore} is higher than Dolphins ${avgDolphinsScore} `
+  );
+} else if (avgDolphinsScore === avgKoalasScore && avgKoalasScore > 100) {
+  console.log(`DRAW!`);
+} else console.log(`No one wins the trophy!`);

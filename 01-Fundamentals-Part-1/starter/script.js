@@ -165,4 +165,4 @@ console.log("I am " + 23 + " years old"); // converted to string using +
 console.log("23" - "10" - 3); // converted to number using -
 console.log("23" / "2");
 console.log("23" > "13");
-console.log("23" < 13);
+console.log("23" < 14);

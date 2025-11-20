@@ -65,3 +65,12 @@ Use starter code to start each section, and **final code to compare it with your
 ### Q13: Do you accept pull requests?
 
 **A:** No, for the simple reason that I want this repository to contain the _exact_ same code that is shown in the videos. However, please feel free to add an issue if you found one.
+
+
+```mermaid
+pie
+    title What goes into a pie
+    "Apples" : 40
+    "Pecans" : 20
+    "Crust" : 30
+    "Sugar" : 10

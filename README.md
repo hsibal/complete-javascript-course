@@ -68,9 +68,22 @@ Use starter code to start each section, and **final code to compare it with your
 
 
 ```mermaid
-pie
-    title What goes into a pie
-    "Apples" : 40
-    "Pecans" : 20
-    "Crust" : 30
-    "Sugar" : 10
+graph TD
+    subgraph AWS/Connect
+        A[Customer Call] --> B(Contact Flow / IVR);
+        B --> C{Map Data / Auth};
+        C --> D(Kinesis/Lambda Functions);
+        D --> E[SAML/SSO for Agent];
+        E --> F[Call Controls / Audio];
+    end
+
+    subgraph Salesforce/SCV
+        G[Service Console / Agent] --> F;
+        G --> H(Omni-Channel Widget);
+        H --> I(Omni-Channel Flow);
+        I --> J(VoiceCall Object);
+    end
+
+    C --> J;
+    J --> I;
+    I --> H;
